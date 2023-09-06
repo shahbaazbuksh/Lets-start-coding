@@ -37,6 +37,7 @@ const Expenses = (props) => {
           onChangeFilter={filterChangeHandler}
         />
         {expensesContent}
+        {filteredExpenses.length === 1 && <p>Please add some more item</p>}
       </Card>
     </div>
   );
